@@ -24,7 +24,7 @@ public class DistanceCalculator {
     static long getTimeToTravelByVehicle(String inFromPosition, String inToPosition) {
         try {
             DistanceMatrix matrix = getDefaultDistanceMatrix(inFromPosition, inToPosition);
-            System.out.println(matrix.rows[0].elements[0].duration);
+            System.out.println(matrix.rows[0].elements[0].duration + "for " + inFromPosition + " to " + inToPosition);
             return matrix.rows[0].elements[0].duration.inSeconds;
         } catch(Exception e) {
             System.out.println("Distance calculator : " + e);
