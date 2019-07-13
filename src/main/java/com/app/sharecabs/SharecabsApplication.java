@@ -10,14 +10,10 @@ public class SharecabsApplication {
 
 	public static void main(String[] args) {
 	//Example of how to use CheckForShare - Should have written junit - my bad
-	boolean isSharePossible = 	CheckForShare.newRequest()
-											  .setTimeThreshold(TimeShareThreshold.HIGH)
-											  .isSharePossible("Egmore", "mayajaal resort", "Ascendas IT park");
-
-		System.out.println(isSharePossible);
-
+	boolean isSharePossible = CheckForShare.newRequest().setTimeThreshold(TimeShareThreshold.HIGH).isSharePossible("Egmore", "mayajaal resort", "Ascendas IT park");
+	System.out.println(isSharePossible);
 	//Need to setup data source
-		SpringApplication.run(SharecabsApplication.class, args);
+	SpringApplication.run(SharecabsApplication.class, args);
 	}
 
 }
