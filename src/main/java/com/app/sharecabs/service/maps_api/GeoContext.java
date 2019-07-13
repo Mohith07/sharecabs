@@ -13,7 +13,7 @@ class GeoContext {
         if (geoApiContext == null) {
             geoApiContext = new GeoApiContext
                     .Builder()
-                    .apiKey("AIzaSyCUb75qdJGc_q3In7TukItDDMQWvR4cldA")
+                    .apiKey("Enter your GCP api key")
                     .build();
             return geoApiContext;
         }
